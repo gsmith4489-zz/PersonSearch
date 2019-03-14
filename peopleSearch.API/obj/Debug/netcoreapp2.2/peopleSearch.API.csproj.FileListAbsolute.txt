@@ -1,0 +1,14 @@
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\bin\Debug\netcoreapp2.2\peopleSearch.API.deps.json
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\bin\Debug\netcoreapp2.2\peopleSearch.API.runtimeconfig.json
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\bin\Debug\netcoreapp2.2\peopleSearch.API.runtimeconfig.dev.json
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\bin\Debug\netcoreapp2.2\peopleSearch.API.dll
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\bin\Debug\netcoreapp2.2\peopleSearch.API.pdb
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\obj\Debug\netcoreapp2.2\peopleSearch.API.csprojAssemblyReference.cache
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\obj\Debug\netcoreapp2.2\peopleSearch.API.csproj.CoreCompileInputs.cache
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\obj\Debug\netcoreapp2.2\peopleSearch.API.RazorAssemblyInfo.cache
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\obj\Debug\netcoreapp2.2\peopleSearch.API.RazorAssemblyInfo.cs
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\obj\Debug\netcoreapp2.2\peopleSearch.API.AssemblyInfoInputs.cache
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\obj\Debug\netcoreapp2.2\peopleSearch.API.AssemblyInfo.cs
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\obj\Debug\netcoreapp2.2\peopleSearch.API.RazorTargetAssemblyInfo.cache
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\obj\Debug\netcoreapp2.2\peopleSearch.API.dll
+C:\A_SS\Learning\dotnetAngular\peopleSearch\peopleSearch.API\obj\Debug\netcoreapp2.2\peopleSearch.API.pdb
