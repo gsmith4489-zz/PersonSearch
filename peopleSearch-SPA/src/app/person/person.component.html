@@ -1,3 +1,7 @@
-<p>
-  person works!
+<p *ngFor="let person of persons">
+  {{person.id}}. {{person.firstName}} {{person.lastName}}
+  {{person.address}} {{person.city}}, {{person.state}} {{person.zip}}
+  
 </p>
+
+<p>another test</p>

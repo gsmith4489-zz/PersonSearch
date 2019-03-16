@@ -12,12 +12,14 @@ export class PersonComponent implements OnInit {
   constructor(private http:HttpClient) { }
 
   ngOnInit() {
-    this.getPersons();
+      this.getPersons();
   }
 
   getPersons() {
-    this.http.get('http://localhost:5000/api/values').subscribe(response => {
-      this.persons = response;
-    }, error => {console.log(error);
-    });
+      this.http.get('http://localhost:5000/api/persons').subscribe(response => {
+        this.persons = response;
+      }, error => {console.log(error);
+      });
+  }
+
 }
