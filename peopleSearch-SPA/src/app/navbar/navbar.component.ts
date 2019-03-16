@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  model: any = {};
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  search() {
+    console.log(this.model);
+    console.log('Search button hit');
+  }
+
 
 }

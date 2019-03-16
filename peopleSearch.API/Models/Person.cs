@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 namespace peopleSearch.API.Models
 {
@@ -22,8 +23,8 @@ namespace peopleSearch.API.Models
 
         public string Gender { get; set; }
         
-        // Interests
+        public string Interests { get; set; }
 
-        // Picture
+        public ICollection<Photo> Photos { get; set; }
     }
 }

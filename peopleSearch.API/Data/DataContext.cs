@@ -8,6 +8,6 @@ namespace peopleSearch.API.Data
     
         public DbSet<Person> Persons { get; set; }
     
-    
+        public DbSet<Photo> Photos { get; set; }
     }
 }

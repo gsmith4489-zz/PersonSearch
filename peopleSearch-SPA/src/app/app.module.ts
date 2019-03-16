@@ -4,7 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { PersonComponent } from './person/person.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -15,7 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
    ],
    imports: [
       BrowserModule,
-      HttpClientModule
+      HttpClientModule,
+      FormsModule
    ],
    providers: [],
    bootstrap: [

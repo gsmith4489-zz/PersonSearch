@@ -1,21 +1,13 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
   <a class="navbar-brand" href="#">People Search</a>
   <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Matches</a> 
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Lists</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Messages</a>
-    </li>
+ 
     
   </ul>
-  
-  <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+  <!-- ngSubmit at form level and not button level -->
+  <form  #searchForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="search()">
+    <input class="form-control mr-sm-2" type="text" name="searchname" placeholder="Name to Search" [(ngModel)]="model.searchname" >
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>
   </form>
   
 </nav>
