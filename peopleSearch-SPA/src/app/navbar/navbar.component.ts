@@ -16,7 +16,9 @@ export class NavbarComponent implements OnInit {
   }
 
   search() {
-    console.log(this.model);
+    
+    // Search button pressed.
+    // Step 1: Need to make a web api call and pass in what is in the search box as the parameter
     this.alertify.success('Processing Search Request');
   }
 

@@ -15,9 +15,17 @@ export class PersonListComponent implements OnInit {
   ngOnInit() {
     /* this causes all persons to be displayed to start with */
 
-    this.loadPersons();
+    // #TEST  this.loadPersons();
+     this.loadPersonSearch();
+  }
+
+  loadPersonSearch() {
+    this.personService.getPersonSearch('Jackie').subscribe((persons: Person[]) => {
+      this.persons = persons;
+    });
 
   }
+
 
   loadPersons() {
     this.personService.getPersons().subscribe((persons: Person[]) => {
@@ -26,6 +34,7 @@ export class PersonListComponent implements OnInit {
 
   }
 
+  
 
 
 }
