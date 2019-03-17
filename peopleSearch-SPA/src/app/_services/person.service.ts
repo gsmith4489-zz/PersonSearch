@@ -23,8 +23,8 @@ getPerson(id): Observable<Person> {
 }
 
 // Persons with search string
-getPersonSearch(nameSearch): Observable<Person> {
-  return this.http.get<Person>(this.baseUrl + 'persons/' + '?Search=' + nameSearch);
+getPersonSearch(nameSearch): Observable<Person[]> {
+  return this.http.get<Person[]>(this.baseUrl + 'persons/' + '?Search=' + nameSearch);
 
 }
 

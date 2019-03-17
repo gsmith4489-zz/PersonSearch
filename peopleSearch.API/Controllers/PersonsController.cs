@@ -21,16 +21,17 @@ namespace peopleSearch.API.Controllers
 
         // GET api/persons
         [HttpGet]
-        public async Task<IActionResult> GetPersons(string search="All")
+        public async Task<IActionResult> GetPersons(string search)
         {
-           
-            if (search=="" | search.ToLower()=="all") 
+            
+            if (search == null | search.ToLower()=="all") 
             {
                 var persons = await _context.Persons.ToListAsync();
                 return Ok(persons);
             } else 
             {
-                var persons = await _context.Persons.Where (p => p.Firstname == search).ToListAsync();
+                var persons = await _context.Persons.Where (p => p.Firstname.ToLower().Contains(search) ||
+                    p.Lastname.ToLower().Contains(search) ).ToListAsync();
                 return Ok(persons);
             }
             

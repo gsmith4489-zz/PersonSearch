@@ -20,9 +20,10 @@ export class PersonListComponent implements OnInit {
   }
 
   loadPersonSearch() {
-    this.personService.getPersonSearch('Jackie').subscribe((persons: Person[]) => {
+    this.personService.getPersonSearch('all').subscribe(( persons: Person[]) => {
       this.persons = persons;
     });
+
 
   }
 

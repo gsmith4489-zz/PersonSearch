@@ -14,7 +14,6 @@ export class MemberCardComponent implements OnInit {
 
   constructor() { }
 
-  
 
   ngOnInit() {
     // Calculate the age
