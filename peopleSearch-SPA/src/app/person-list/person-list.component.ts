@@ -16,7 +16,7 @@ export class PersonListComponent implements OnInit {
     /* this causes all persons to be displayed to start with */
 
     // #TEST  this.loadPersons();
-     this.loadPersonSearch();
+    // this.loadPersonSearch();
   }
 
   loadPersonSearch() {

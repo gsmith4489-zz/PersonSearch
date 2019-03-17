@@ -25,9 +25,16 @@ export class NavbarComponent implements OnInit {
     // Step 1: Need to make a web api call and pass in what is in the search box as the parameter
     this.alertify.success('Processing Search Request');
 
-    // let myText = this.searchname;
+    let myText = this.textValue;
+    if (myText === '' || myText === null || myText === undefined) {
+      myText = 'all';
+    }
 
-    this.loadPersonSearch(this.textValue.toLowerCase());
+    myText = myText.toLowerCase();
+    console.log(myText);
+
+    //myText = 'all';
+    this.loadPersonSearch(myText);
 
     // Need to call the person-list component
 
