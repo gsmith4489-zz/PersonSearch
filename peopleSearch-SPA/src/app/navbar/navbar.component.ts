@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertifyService } from '../_services/alertify.service';
 
 @Component({
   selector: 'app-navbar',
@@ -9,14 +10,14 @@ export class NavbarComponent implements OnInit {
 
   model: any = {};
 
-  constructor() { }
+  constructor(private alertify: AlertifyService) { }
 
   ngOnInit() {
   }
 
   search() {
     console.log(this.model);
-    console.log('Search button hit');
+    this.alertify.success('Processing Search Request');
   }
 
 
