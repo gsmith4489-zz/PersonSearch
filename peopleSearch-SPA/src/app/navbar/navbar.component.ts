@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { AlertifyService } from '../_services/alertify.service';
 import { Person } from '../_models/person';
 import { PersonService } from '../_services/person.service';
-
+import { Injectable } from '@angular/core';
+declare let alertify: any;
 
 @Component({
   selector: 'app-navbar',
@@ -14,40 +15,47 @@ export class NavbarComponent implements OnInit {
   model: any = {};
   textValue: string;
 
-  constructor(private alertify: AlertifyService, private personService: PersonService) { }
-
+  constructor( private personService: PersonService) { }
+    // private alertify: AlertifyService,
   ngOnInit() {
   }
 
   search() {
-    
     // Search button pressed.
     // Step 1: Need to make a web api call and pass in what is in the search box as the parameter
-    this.alertify.success('Processing Search Request');
+    // Clear out current data with a search that will return no results
+    this.loadPersonSearch('zzz');
 
+    // Now calculate the proper search parameter based on what was entered in the search box
     let myText = this.textValue;
     if (myText === '' || myText === null || myText === undefined) {
       myText = 'all';
     }
-
+    // Force it to be lower case 
     myText = myText.toLowerCase();
-    console.log(myText);
 
-    //myText = 'all';
+
+    // simulate a delayed respone half the time
+    if (Math.random() > .5) {
+      const msg = alertify.success('Processing Search Results', 1);
+      // tslint:disable-next-line: only-arrow-functions
+      msg.callback = (isClicked) => {
+        if (isClicked) {
+             console.log('notification dismissed by user');
+        } else {
+            this.loadPersonSearch(myText);
+         }
+      };
+      return;
+    }
+
+      // API call including parameter
     this.loadPersonSearch(myText);
-
-    // Need to call the person-list component
-
   }
-
-  
-
 
   loadPersonSearch(search: string) {
     this.personService.getPersonSearch(search).subscribe(( persons: Person[]) => {
       this.persons = persons;
     });
-
-
-}
+  }
 }
