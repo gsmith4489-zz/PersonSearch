@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary">
   <a class="navbar-brand" href="#">People Search</a>
   <ul class="navbar-nav mr-auto">
  
@@ -14,7 +14,7 @@
 
 <div class="container mt-5">
     <div class="row">
-        <div *ngFor="let person of persons" class="col-lg-2 col-md-3 col-sm-6">
+        <div *ngFor="let person of persons" class="col-lg-3 col-md-3 col-sm-3">
             <app-person-card [person]=person></app-person-card>
   
         </div>

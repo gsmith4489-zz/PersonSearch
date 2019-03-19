@@ -3,10 +3,11 @@
         <img class="card-img-top" src="{{person.photoUrl}}" alt="{{person.firstname}}">
     </div>
     <div class="card-body p-1">
-        <h6 class="card-title text-center mb-1"><i class="fa fa-user"></i>{{person.firstname}} {{person.lastname}} 
+        <h6 class="card-title text-center bg-success mb-3">{{person.firstname}} {{person.lastname}} 
           {{'Age:'+age}} 
         </h6>
         <p class="card-text text-muted text-center">{{person.address}}, {{person.city}} {{person.state}}</p>
+        <h6 class="card-text text-muted text-center">Interests: {{person.interests}}</h6>
     </div>
 
 </div>
