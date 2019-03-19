@@ -16,7 +16,8 @@ export class NavbarComponent implements OnInit {
   textValue: string;
 
   constructor( private personService: PersonService) { }
-    // private alertify: AlertifyService,
+
+
   ngOnInit() {
   }
 

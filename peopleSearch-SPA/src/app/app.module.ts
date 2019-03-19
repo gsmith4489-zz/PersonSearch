@@ -6,9 +6,8 @@ import { PersonComponent } from './person/person.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FormsModule } from '@angular/forms';
 import { PersonService } from './_services/person.service';
-import { PersonListComponent } from './person-list/person-list.component';
 import { AlertifyService } from './_services/alertify.service';
-import { MemberCardComponent } from './member-card/member-card.component';
+import { PersonCardComponent } from './person-card/person-card.component';
 
 
 @NgModule({
@@ -16,8 +15,7 @@ import { MemberCardComponent } from './member-card/member-card.component';
       AppComponent,
       PersonComponent,
       NavbarComponent,
-      PersonListComponent,
-      MemberCardComponent
+      PersonCardComponent
    ],
    imports: [
       BrowserModule,
