@@ -1,10 +1,7 @@
 <nav class="navbar navbar-expand-md navbar-dark bg-primary">
   <a class="navbar-brand" href="#">People Search</a>
-  <ul class="navbar-nav mr-auto">
- 
-    
-  </ul>
-  <!-- ngSubmit at form level and not button level -->
+  <ul class="navbar-nav mr-auto"></ul>
+  
   <form  #searchForm="ngForm" class="form-inline my-2 my-lg-0" (ngSubmit)="search()">
     <input class="form-control mr-sm-2" type="text" name="searchname" placeholder="Name to Search" [(ngModel)]="textValue">
     <button class="btn btn-success my-2 my-sm-0" type="submit">Search</button>

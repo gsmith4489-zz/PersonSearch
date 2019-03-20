@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class PersonComponent implements OnInit {
   persons: any;
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
       this.getPersons();
